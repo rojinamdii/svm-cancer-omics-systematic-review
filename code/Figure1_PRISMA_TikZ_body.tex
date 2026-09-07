@@ -1,0 +1,131 @@
+\begin{tikzpicture}[
+  font=\small,
+  >=Latex,
+  titlebox/.style={
+    draw,
+    rounded corners=2pt,
+    fill=yellow!80!orange,
+    minimum width=14.8cm,
+    minimum height=9mm,
+    align=center,
+    font=\bfseries
+  },
+  stage/.style={
+    draw,
+    rounded corners=3pt,
+    fill=blue!25,
+    minimum width=9mm,
+    minimum height=35mm,
+    align=center,
+    font=\bfseries
+  },
+  stagewide/.style={
+    draw,
+    rounded corners=3pt,
+    fill=blue!25,
+    minimum width=9mm,
+    minimum height=88mm,
+    align=center,
+    font=\bfseries
+  },
+  stageshort/.style={
+    draw,
+    rounded corners=3pt,
+    fill=blue!25,
+    minimum width=9mm,
+    minimum height=25mm,
+    align=center,
+    font=\bfseries
+  },
+  idbox/.style={
+    draw,
+    rectangle,
+    text width=5.25cm,
+    minimum height=35mm,
+    align=left,
+    inner sep=6pt
+  },
+  box/.style={
+    draw,
+    rectangle,
+    text width=5.25cm,
+    minimum height=16mm,
+    align=left,
+    inner sep=6pt
+  },
+  arrow/.style={-{Latex[length=2.2mm]},thick}
+]
+
+% Header
+\node[titlebox] (header) at (0,0)
+  {Identification of studies via databases and registers};
+
+% Stage labels
+\node[stage]      at (-6.35,-2.45)  {\rotatebox{90}{Identification}};
+\node[stagewide]  at (-6.35,-8.05)  {\rotatebox{90}{Screening}};
+\node[stageshort] at (-6.35,-13.25) {\rotatebox{90}{Included}};
+
+% Identification stage
+\node[idbox] (identified) at (-2.75,-2.45) {%
+\textbf{Records identified from:}\\[1mm]
+PubMed/MEDLINE ($n=677$)\\
+Web of Science ($n=642$)\\
+Scopus ($n=2149$)\\
+Google Scholar ($n=14$)\\[1mm]
+\textbf{Total records identified ($n=3482$)}
+};
+
+\node[idbox] (removed) at (3.25,-2.45) {%
+\textbf{Records removed before screening:}\\[1mm]
+Duplicate records removed ($n=1142$)\\[1mm]
+Non-English or non-journal article records removed ($n=628$)
+};
+
+% Screening stage
+\node[box] (screened) at (-2.75,-5.55) {%
+\textbf{Records screened}\\
+($n=1712$)
+};
+
+\node[box] (recordsExcluded) at (3.25,-5.55) {%
+\textbf{Records excluded}\\
+($n=1609$)
+};
+
+\node[box] (sought) at (-2.75,-8.05) {%
+\textbf{Reports sought for retrieval}\\
+($n=103$)
+};
+
+\node[box] (notRetrieved) at (3.25,-8.05) {%
+\textbf{Reports not retrieved because the full text was unavailable}\\
+($n=7$)
+};
+
+\node[box] (assessed) at (-2.75,-10.55) {%
+\textbf{Reports assessed for eligibility}\\
+($n=96$)
+};
+
+\node[box] (reportsExcluded) at (3.25,-10.55) {%
+\textbf{Reports excluded after application of the revised eligibility criteria}\\
+($n=21$)
+};
+
+% Included stage
+\node[box] (included) at (-2.75,-13.25) {%
+\textbf{Studies included in review}\\
+($n=75$)
+};
+
+% Arrows
+\draw[arrow] (identified.east) -- (removed.west);
+\draw[arrow] (identified.south) -- (screened.north);
+\draw[arrow] (screened.east) -- (recordsExcluded.west);
+\draw[arrow] (screened.south) -- (sought.north);
+\draw[arrow] (sought.east) -- (notRetrieved.west);
+\draw[arrow] (sought.south) -- (assessed.north);
+\draw[arrow] (assessed.east) -- (reportsExcluded.west);
+\draw[arrow] (assessed.south) -- (included.north);
+
+\end{tikzpicture}
