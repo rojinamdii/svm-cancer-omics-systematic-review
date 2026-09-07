@@ -59,3 +59,19 @@ The final journal DOI will be added after publication.
 ## Citation
 
 Please cite the associated journal article when using these data.
+
+## Machine-Readable CSV Files
+
+For easier programmatic access and direct viewing on GitHub, the main workbook sheets are also provided as CSV files under:
+
+`data/csv/`
+
+Files include:
+
+- `eligibility_decisions.csv`
+- `included_study_characteristics.csv`
+- `reported_svm_performance.csv`
+- `risk_of_bias.csv`
+- `country_update_audit.csv`
+
+The Excel workbook remains the authoritative supplementary data file associated with the manuscript.
