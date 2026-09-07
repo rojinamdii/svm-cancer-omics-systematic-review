@@ -1,0 +1,76 @@
+﻿Study_ID,First_Author_Affiliation_Country,Source_File,Verification_Basis,Study_Data_Geography,Different_From_Study_Data_Geography
+S001,United States,S001_Bahado-Singh_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,United States,No
+S002,Germany,S002_Belczacka_2018.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Germany/European source cohorts,Yes
+S003,Italy,S003_Bertoni_2005.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Dataset origins NR,Yes
+S004,United States,S004_Bifarin_2024.pdf,First author’s first-listed institutional affiliation in the supplied source article.,RCC NR; OC South Korea,Yes
+S005,Brazil,S005_Carvalho_2007.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Brazil,No
+S006,United States,S006_Cesaroni_2014.pdf,First author’s first-listed institutional affiliation in the supplied source article.,United States,No
+S008,United States,S008_Chen_2023.pdf,First author’s first-listed institutional affiliation in the supplied source article.,United States,No
+S009,China,S009_Chen_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S010,Taiwan,S010_Cheng_2019.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Taiwan,No
+S012,China,S012_Wu_2018.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S013,China,S013_Cui_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S014,China,S014_Cui_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S015,France,S015_Drieux_2020.pdf,First author’s first-listed institutional affiliation in the supplied source article.,France/European multicenter cohorts,Yes
+S016,China,S016_Fan_2012.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S017,China,S017_Fan_2010.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S018,Germany,S018_Frantzi_2023.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Spain and Austria,Yes
+S019,Germany,S019_Frantzi_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Austria,Yes
+S020,Germany,S020_Frickenschmidt_2008.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Germany,No
+S021,United States,S021_Gaul_2015.pdf,First author’s first-listed institutional affiliation in the supplied source article.,United States and Canada,Yes
+S023,Germany,S023_Gress_2017.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Germany and Italy,Yes
+S025,United States,S025_Liu_2006.pdf,First author’s first-listed institutional affiliation in the supplied source article.,United States,No
+S027,Argentina,S027_Manzi_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Argentina,No
+S028,India,S028_Maurya_2023.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public TCGA and GEO datasets,Yes
+S029,South Korea,S029_Nam_2009.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Korea; public tissue datasets,Yes
+S030,China,S030_Pan_2008.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S031,Latvia,S031_Polaka_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Latvia,No
+S032,China,S032_Qiu_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S033,China,S033_Ren_2022.txt,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S034,China,S034_Shen_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S035,China,S035_Shi_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S036,China,S036_Su_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public TCGA dataset,Yes
+S037,China,S037_Sun_2023,"The requested target PDF was not present in the supplied S037 archive; country was confirmed from the first-author article metadata (Zhengzhou University, China).",China,No
+S038,China,S038_Sun_2024.txt,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S039,France,S039_Taleb_2013.pdf,First author’s first-listed institutional affiliation in the supplied source article.,France,No
+S040,China,S040_Tang_2023.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public international GEO datasets,Yes
+S041,China,S041_Tang_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S042,Canada,S042_Veliz_2024.txt,Country assigned from the first author’s first-listed institutional affiliation in the supplied article record (Canada).,Canada,No
+S043,China,S043_Wang_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public TCGA dataset,Yes
+S045,China,S045_Wang_2014.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S046,China,S046_Wang_2016.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S048,China,S048_Jian_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S050,Turkey,S050_Kilicarslan_2020.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public datasets; original countries mixed/NR,Yes
+S052,Iran,S052_Jamialahmadi_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Iran with public discovery datasets,Yes
+S053,China,S053_Liu_2023.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S054,China,S054_Liu_2015.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public international GEO datasets,Yes
+S055,China,S055_Liang_2010.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S056,Iran,S056_Hosseini_2023.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public TCGA and GEO datasets,Yes
+S057,South Korea,S057_Kwon_2015.pdf,First author’s first-listed institutional affiliation in the supplied source article.,South Korea; independent public GEO datasets,Yes
+S058,China,S058_Jiang_2013.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China; public GEO datasets,Yes
+S059,United Kingdom,S059_Hands_2013.pdf,First author’s first-listed institutional affiliation in the supplied source article.,United Kingdom,No
+S061,China,S061_Li_2023.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S062,China,S062_Huang_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S063,United States,S063_Izbicka_2012.pdf,First author’s first-listed institutional affiliation in the supplied source article.,United States,No
+S064,Spain,S064_Herreros-Villanueva_2019.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Spain,No
+S065,China,S065_Lin_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S067,Germany,S067_Henneges_2009.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Germany,No
+S068,China,S068_Li_2010.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S069,China,S069_Hu_2020.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public TCGA dataset; qRT-PCR cohort China,Yes
+S070,China,S070_Li_2020.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public TCGA/GEO datasets; qRT-PCR cohort China,Yes
+S071,United States,S071_Khatri_2020.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public international datasets,Yes
+S072,Turkey,S072_Guleken_2023.txt,Country assigned from the first author’s first-listed institutional affiliation in the supplied article record (Turkey).,Turkey,No
+S073,China,S073_Wang_2007.txt,Country assigned from the first author/source-article record for the Chinese high-incidence-area study (China).,China,No
+S074,China,S074_Wang_2019.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public GEO datasets,Yes
+S075,Thailand,S075_Watcharatanyatip_2022.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Thailand,No
+S077,China,S077_Xia_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S078,China,S078_Xu_2018.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S079,China,S079_Xu_2017.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public ArrayExpress dataset,Yes
+S080,China,S080_Yang_2021.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S083,China,S083_Yu_2004.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S084,China,S084_Yu_2005.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S085,China,S085_Yu_2020.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S086,China,S086_Yuan_2020.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Public GEO dataset; original cohort Netherlands,Yes
+S091,Singapore,S091_Zhang_2024.pdf,First author’s first-listed institutional affiliation in the supplied source article.,Singapore,No
+S094,China,S094_Zheng_2020.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No
+S096,China,S096_Zhou_2019.pdf,First author’s first-listed institutional affiliation in the supplied source article.,China,No

@@ -1,0 +1,545 @@
+﻿Study_ID,Cancer_or_Task,SVM_Model,Reported_Metric,Reported_Value,Reported_Confidence_Interval,Dataset_or_Cohort,Dataset_Level,Validation_Category,Evidence_Location,Notes
+S001,Lung cancer; 10 intragenic CpGs,SVM,AUC,1,0.90-1.00,Repeated 80/20 validation,Internal validation,Internal only,"Table 2, PDF p.5",Main 10-marker model.
+S001,Lung cancer; 10 intragenic CpGs,SVM,Sensitivity,0.94,NR,Repeated 80/20 validation,Internal validation,Internal only,"Table 2, PDF p.5",
+S001,Lung cancer; 10 intragenic CpGs,SVM,Specificity,1,NR,Repeated 80/20 validation,Internal validation,Internal only,"Table 2, PDF p.5",
+S002,General solid-tumor detection,SVM peptide classifier,AUC,0.82,0.79-0.85,Independent cohort n=635,External validation,External only,"Results, PDF p.3",Predetermined cutoff -0.07.
+S002,General solid-tumor detection,SVM peptide classifier,Sensitivity,0.69,NR,Independent cohort n=635,External validation,External only,"Results, PDF p.3",
+S002,General solid-tumor detection,SVM peptide classifier,Specificity,0.81,NR,Independent cohort n=635,External validation,External only,"Results, PDF p.3",
+S003,Colon adenocarcinoma vs normal tissue,Single linear SVM,Test error,0.1774,SD 0.1087,Five-fold CV,Internal validation,Internal only,"Experimental results, PDF p.3","Random-subspace ensemble performed better, but exact numeric minimum was not reported."
+S004,Renal cell carcinoma vs healthy controls,Standalone SVM,AUC,0.93,NR,Held-out RCC test set,Internal test,Internal only,"Table 1, PDF p.5",AutoML AUC was 0.97.
+S004,Renal cell carcinoma vs healthy controls,Standalone SVM,Accuracy,0.9,NR,Held-out RCC test set,Internal test,Internal only,"Table 1, PDF p.5",
+S004,Renal cell carcinoma vs healthy controls,Standalone SVM,Sensitivity,0.83,NR,Held-out RCC test set,Internal test,Internal only,"Table 1, PDF p.5",
+S004,Renal cell carcinoma vs healthy controls,Standalone SVM,Specificity,0.94,NR,Held-out RCC test set,Internal test,Internal only,"Table 1, PDF p.5",
+S004,Ovarian cancer vs other gynecological cancers,Standalone SVM,AUC,0.82,NR,Held-out OC test set,Internal test,Internal only,"Table 1, PDF p.5",AutoML and RF AUC were 0.85.
+S004,Ovarian cancer vs other gynecological cancers,Standalone SVM,Accuracy,0.73,NR,Held-out OC test set,Internal test,Internal only,"Table 1, PDF p.5",
+S004,Ovarian cancer vs other gynecological cancers,Standalone SVM,Sensitivity,0.72,NR,Held-out OC test set,Internal test,Internal only,"Table 1, PDF p.5",
+S004,Ovarian cancer vs other gynecological cancers,Standalone SVM,Specificity,0.76,NR,Held-out OC test set,Internal test,Internal only,"Table 1, PDF p.5",
+S005,Hodgkin lymphoma vs healthy controls,SVM-RFE classifier,Accuracy,1,NR,Leave-one-out CV on 60 participants,Internal validation,Internal only,"Abstract and Methods/Results, PDF pp.1,3-4",Feature selection may not have been nested within LOO.
+S005,Hodgkin lymphoma vs healthy controls,SVM-RFE classifier,Sensitivity,1,NR,Leave-one-out CV on 60 participants,Internal validation,Internal only,"Abstract and Results, PDF pp.1,4",All 30 cases were correctly classified.
+S005,Hodgkin lymphoma vs healthy controls,SVM-RFE classifier,Specificity,1,NR,Leave-one-out CV on 60 participants,Internal validation,Internal only,"Abstract and Results, PDF pp.1,4",All 30 controls were correctly classified.
+S006,Colon cancer vs non-cancer; 18-CpG model,SVM-RFE,Sensitivity,0.96,NR,40-sample training set,Training,Internal only,"Results, PDF p.5",One cancer case misclassified.
+S006,Colon cancer vs non-cancer; 18-CpG model,SVM-RFE,Specificity,1,NR,40-sample training set,Training,Internal only,"Results, PDF p.5",
+S006,Colon cancer vs non-cancer; 18-CpG model,SVM-RFE,Accuracy,1,NR,Held-out test set n=8,Internal test,Internal only,"Results, PDF p.5",All eight samples correctly classified.
+S008,PDAC without chronic pancreatitis; PCA/Gaussian,Conditional SVM,AUC,0.988,0.975-1.000,DS2 n=417,Internal validation,Internal only,"Table 2b, PDF p.7",
+S008,PDAC without chronic pancreatitis; PCA/Gaussian,Conditional SVM,Sensitivity,0.899,0.849-0.949,DS2 n=417,Internal validation,Internal only,"Table 2b, PDF p.7",
+S008,PDAC without chronic pancreatitis; PCA/Gaussian,Conditional SVM,Specificity,0.975,0.956-0.993,DS2 n=417,Internal validation,Internal only,"Table 2b, PDF p.7",
+S008,PDAC without chronic pancreatitis; PCA/Gaussian,Conditional SVM,Accuracy,0.95,0.929-0.971,DS2 n=417,Internal validation,Internal only,"Table 2b, PDF p.7",
+S008,PDAC with chronic pancreatitis,Conditional SVM,AUC,1,1.00-1.00,DS4 validation set,Internal validation,Internal only,"Results, PDF p.8",Small subgroup; authors warn of overestimation.
+S008,PDAC with chronic pancreatitis,Conditional SVM,Accuracy,1,1.00-1.00,DS4 validation set,Internal validation,Internal only,"Results, PDF p.8",
+S009,ESCC vs healthy controls,Linear SVM; cost=3,AUC,0.979,0.935-1.000,Held-out test set n=40,Internal test,Internal only,"Results/Table 3, PDF p.6",
+S009,ESCC vs healthy controls,Linear SVM; cost=3,Accuracy,0.98,0.868-0.999,Held-out test set n=40,Internal test,Internal only,"Table 3, PDF p.6",
+S009,ESCC vs healthy controls,Linear SVM; cost=3,Sensitivity,0.96,NR,Held-out test set n=40,Internal test,Internal only,"Table 3, PDF p.6",
+S009,ESCC vs healthy controls,Linear SVM; cost=3,Specificity,1,NR,Held-out test set n=40,Internal test,Internal only,"Table 3, PDF p.6",
+S010,Endometrial cancer vs non-EC,SVM; 3-metabolite panel,AUC,0.88,0.76-0.97,Training dataset n=45,Training,Internal only,"Table 4, PDF p.8",Test-set AUC was not reported.
+S010,Endometrial cancer vs non-EC,SVM; 3-metabolite panel,Accuracy,0.78,0.40-0.97,Held-out test set n=9,Internal test,Internal only,"Table 4, PDF p.8",
+S010,Endometrial cancer vs non-EC,SVM; 3-metabolite panel,Sensitivity,0.75,0.19-0.99,Held-out test set n=9,Internal test,Internal only,"Table 4, PDF p.8",
+S010,Endometrial cancer vs non-EC,SVM; 3-metabolite panel,Specificity,0.8,0.28-1.00,Held-out test set n=9,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,Conventional SVM,AUC,0.968,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",Linear kernel; C=32.
+S012,Nasopharyngeal carcinoma vs healthy controls,Conventional SVM,Accuracy,0.9849,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,Conventional SVM,Sensitivity,0.9791,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,Conventional SVM,Specificity,0.9883,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,PCA-SVM,AUC,0.975,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,PCA-SVM,Accuracy,0.9905,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,PCA-SVM,Sensitivity,0.9759,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,PCA-SVM,Specificity,0.9993,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,WPCA-SVM,AUC,0.982,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",The text contains minor inconsistent rounded AUC values; table value retained.
+S012,Nasopharyngeal carcinoma vs healthy controls,WPCA-SVM,Accuracy,0.9915,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,WPCA-SVM,Sensitivity,0.9879,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S012,Nasopharyngeal carcinoma vs healthy controls,WPCA-SVM,Specificity,0.9936,NR,Repeated 50/50 test sets,Internal test,Internal only,"Table 4, PDF p.8",
+S013,CRC tissue vs normal tissue,SVM,AUC,0.878,NR,GSE110224,Apparent/same-data,No validation,"Results, PDF pp.4-5",Feature selection and evaluation used the same dataset.
+S013,CRC serum vs healthy serum,SVM,AUC,0.743,NR,Protein-array cohort,Apparent/same-data,No validation,"Results, PDF pp.4-5",No resampling or independent validation reported.
+S014,Colorectal cancer vs healthy controls,Sigmoid-kernel SVM,AUC,0.933,NR,Random 7:3 pooled-cohort split,Internal test,Internal only,"Results, PDF p.6",Six proteins may have been selected before splitting.
+S015,Peripheral T-cell lymphoma subtype classification,SVM molecular classifier,Accuracy,0.915,NR,153 specified PTCL cases,Internal/model fit,Internal only,"Results, PDF pp.6-7",140 of 153 assigned to the corresponding molecular class.
+S015,Inter-laboratory reproducibility,SVM molecular classifier,Concordance,0.9,NR,40 identical FFPE specimens tested at three laboratories,Analytical reproducibility,Internal only,"Results, PDF pp.7-8",Same specimens across laboratories; not external patient validation.
+S016,Breast cancer vs healthy controls,Three-peak SVM,Cross-validated accuracy,0.9178,NR,Model-construction group n=73,Internal validation,Internal only,"Results, PDF pp.4-5",
+S016,Breast cancer vs healthy controls,Three-peak SVM,Sensitivity,0.9459,NR,Model-construction group n=73,Development/internal,Internal only,"Table 2, PDF p.5",
+S016,Breast cancer vs healthy controls,Three-peak SVM,Specificity,0.8889,NR,Model-construction group n=73,Development/internal,Internal only,"Table 2, PDF p.5",
+S016,Breast cancer vs healthy controls,Three-peak SVM,Accuracy,0.9178,NR,Blind held-out group n=73,Internal test,Internal only,"Table 2, PDF p.5",67/73 correctly classified.
+S016,Breast cancer vs healthy controls,Three-peak SVM,Sensitivity,0.9189,NR,Blind held-out group n=73,Internal test,Internal only,"Table 2, PDF p.5",34/37.
+S016,Breast cancer vs healthy controls,Three-peak SVM,Specificity,0.9167,NR,Blind held-out group n=73,Internal test,Internal only,"Table 2, PDF p.5",33/36.
+S017,Breast cancer vs healthy/benign controls,RBF SVM,Sensitivity,0.97,NR,Training set LOOCV n=120,Internal validation,Internal only,"Results, PDF p.6",
+S017,Breast cancer vs healthy/benign controls,RBF SVM,Specificity,0.96,NR,Training set LOOCV n=120,Internal validation,Internal only,"Results, PDF p.6",
+S017,Breast cancer vs healthy/benign controls,RBF SVM,AUC,0.972,NR,Blind held-out test n=162,Internal test,Internal only,"Results, PDF p.7",
+S017,Breast cancer vs healthy/benign controls,RBF SVM,Sensitivity,0.9645,NR,Blind held-out test n=162,Internal test,Internal only,"Results, PDF p.7",
+S017,Breast cancer vs healthy/benign controls,RBF SVM,Specificity,0.9487,NR,Blind held-out test n=162,Internal test,Internal only,"Results, PDF p.7",
+S017,Breast cancer vs healthy/benign controls,RBF SVM,PPV,0.96,NR,Blind held-out test n=162,Internal test,Internal only,"Results, PDF p.7",
+S018,Prostate cancer vs biopsy-negative non-PCa,181-peptide SVM,AUC,0.86,NR,Discovery cohort n=413,Cross-validation,Internal and external,"Results, PDF p.9",C=16; gamma=0.01.
+S018,Prostate cancer vs biopsy-negative non-PCa,181-peptide SVM,AUC,0.81,0.77-0.85,First validation cohort n=410,Internal test,Internal and external,"Results, PDF p.9",Random same-center split.
+S018,Prostate cancer vs biopsy-negative non-PCa,181-peptide SVM,Sensitivity,0.93,0.87-0.96,First validation cohort n=410,Internal test,Internal and external,"Results, PDF p.9",Cutoff 0.007.
+S018,Prostate cancer vs biopsy-negative non-PCa,181-peptide SVM,Specificity,0.69,0.63-0.74,First validation cohort n=410,Internal test,Internal and external,"Results, PDF p.9",Cutoff 0.007.
+S018,Prostate cancer detection,181-peptide SVM,Sensitivity,0.8367,NR,Independent Innsbruck cohort n=147 PCa only,External validation,Internal and external,"Results, PDF p.10",123/147; external cohort lacked non-PCa controls.
+S019,Clinically significant vs insignificant prostate cancer,19-peptide SVM,AUC,0.803,0.73-0.86,Independent Innsbruck cohort n=147,External validation,External only,"Results, PDF p.3",Predefined cutoff -0.07.
+S019,Clinically significant vs insignificant prostate cancer,19-peptide SVM,Sensitivity,0.875,NR,Independent Innsbruck cohort n=147,External validation,External only,"Results, PDF p.3",42/48 clinically significant cases.
+S019,Clinically significant vs insignificant prostate cancer,19-peptide SVM,Specificity,0.646,NR,Independent Innsbruck cohort n=147,External validation,External only,"Results, PDF p.3",64/99 clinically insignificant cases.
+S019,Clinically significant vs insignificant prostate cancer,19-peptide SVM,NPV,0.918,0.719-0.991,Independent Innsbruck cohort n=147,External validation,External only,"Results, PDF p.3",
+S019,Clinically significant vs insignificant prostate cancer,19-peptide SVM,PPV,0.55,0.34-0.758,Independent Innsbruck cohort n=147,External validation,External only,"Results, PDF p.3",
+S020,Breast cancer vs healthy controls,RBF SVM using 31 nucleosides,Sensitivity,0.8767,NR,Leave-one-out cross-validation n=212,Internal validation,Internal only,"Results, PDF pp.10-11",Scaling and parameter tuning were nested within each LOO fold.
+S020,Breast cancer vs healthy controls,RBF SVM using 31 nucleosides,Specificity,0.899,NR,Leave-one-out cross-validation n=212,Internal validation,Internal only,"Results, PDF pp.10-11",
+S020,Breast cancer vs healthy controls,RBF SVM with nested RFE-selected features,Sensitivity,0.8939,NR,Leave-one-out cross-validation n=212,Internal validation,Internal only,"Results, PDF pp.11-12",RFE repeated inside each training fold.
+S020,Breast cancer vs healthy controls,RBF SVM with nested RFE-selected features,Specificity,0.8889,NR,Leave-one-out cross-validation n=212,Internal validation,Internal only,"Results, PDF pp.11-12",
+S021,Early-stage ovarian cancer vs healthy controls,Linear SVM; 255 features,Accuracy,0.62,NR,Serum cohort n=95,Internal LOOCV,Internal only,"Results/Methods, PDF pp.1-5",Full filtered feature set.
+S021,Early-stage ovarian cancer vs healthy controls,Linear SVM; 255 features,Sensitivity,0.67,NR,Serum cohort n=95,Internal LOOCV,Internal only,"Results/Methods, PDF pp.1-5",Full filtered feature set.
+S021,Early-stage ovarian cancer vs healthy controls,Linear SVM; 255 features,Specificity,0.57,NR,Serum cohort n=95,Internal LOOCV,Internal only,"Results/Methods, PDF pp.1-5",Full filtered feature set.
+S021,Early-stage ovarian cancer vs healthy controls,Linear SVM; 16 metabolites,Accuracy,1,NR,Serum cohort n=95,Internal LOOCV,Internal only,"Results/Methods, PDF pp.1-5",Perfect result; interpret cautiously.
+S021,Early-stage ovarian cancer vs healthy controls,Linear SVM; 16 metabolites,Sensitivity,1,NR,Serum cohort n=95,Internal LOOCV,Internal only,"Results/Methods, PDF pp.1-5",Perfect result; interpret cautiously.
+S021,Early-stage ovarian cancer vs healthy controls,Linear SVM; 16 metabolites,Specificity,1,NR,Serum cohort n=95,Internal LOOCV,Internal only,"Results/Methods, PDF pp.1-5",Perfect result; interpret cautiously.
+S023,PDAC vs chronic pancreatitis,Linear SVM; combined 77 mRNA/miRNA markers,Accuracy,0.93,NR,Main PDAC-vs-CP cohort n=74,Repeated 10x10-fold CV,Internal only,"Abstract/Results/Methods, PDF pp.1,4-7,12-13",Feature selection was repeated within training folds.
+S023,PDAC vs chronic pancreatitis,Linear SVM; combined 77 mRNA/miRNA markers,Sensitivity,0.917,NR,Main PDAC-vs-CP cohort n=74,Repeated 10x10-fold CV,Internal only,"Abstract/Results, PDF pp.1,4-7",Combined classifier.
+S023,PDAC vs chronic pancreatitis,Linear SVM; combined 77 mRNA/miRNA markers,Specificity,0.945,NR,Main PDAC-vs-CP cohort n=74,Repeated 10x10-fold CV,Internal only,"Abstract/Results, PDF pp.1,4-7",Combined classifier.
+S023,PDAC vs chronic pancreatitis,Linear SVM; miRNA-only model,Accuracy,0.75,NR,Main PDAC-vs-CP cohort n=74,Repeated 10x10-fold CV,Internal only,"Results, PDF pp.4-7",miRNA-only comparator.
+S023,PDAC vs chronic pancreatitis,Linear SVM; miRNA-only model,Sensitivity,0.585,NR,Main PDAC-vs-CP cohort n=74,Repeated 10x10-fold CV,Internal only,"Results, PDF pp.4-7",miRNA-only comparator.
+S023,PDAC vs chronic pancreatitis,Linear SVM; miRNA-only model,Specificity,0.883,NR,Main PDAC-vs-CP cohort n=74,Repeated 10x10-fold CV,Internal only,"Results, PDF pp.4-7",miRNA-only comparator.
+S025,Ovarian cancer vs controls,Linear SVM,Accuracy,0.97,NR,Public ovarian SELDI dataset n=253,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best ovarian model.
+S025,Ovarian cancer vs controls,Linear SVM,Sensitivity,0.99,NR,Public ovarian SELDI dataset n=253,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best ovarian model.
+S025,Ovarian cancer vs controls,Linear SVM,Specificity,0.92,NR,Public ovarian SELDI dataset n=253,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best ovarian model.
+S025,Ovarian cancer vs controls,Linear SVM,PPV,0.96,NR,Public ovarian SELDI dataset n=253,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best ovarian model.
+S025,Ovarian cancer vs controls,Linear SVM,NPV,0.99,NR,Public ovarian SELDI dataset n=253,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best ovarian model.
+S025,Prostate cancer vs controls,Polynomial SVM,Accuracy,0.82,NR,Public prostate SELDI dataset n=132,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best prostate model.
+S025,Prostate cancer vs controls,Polynomial SVM,Sensitivity,0.79,NR,Public prostate SELDI dataset n=132,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best prostate model.
+S025,Prostate cancer vs controls,Polynomial SVM,Specificity,0.87,NR,Public prostate SELDI dataset n=132,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best prostate model.
+S025,Prostate cancer vs controls,Polynomial SVM,PPV,0.89,NR,Public prostate SELDI dataset n=132,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best prostate model.
+S025,Prostate cancer vs controls,Polynomial SVM,NPV,0.81,NR,Public prostate SELDI dataset n=132,Stratified 10-fold CV,Internal only,"Results/Table, PDF pp.2-4",Best prostate model.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 16 lipids,Accuracy,0.957,NR,Training/tuning cohort,Internal CV,Internal only,"Results, PDF pp.4-8",Training-side estimate.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 16 lipids,Sensitivity,1,NR,Training/tuning cohort,Internal CV,Internal only,"Results, PDF pp.4-8",Text value.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 16 lipids,Specificity,0.913,NR,Training/tuning cohort,Internal CV,Internal only,"Results, PDF pp.4-8",Text value.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 16 lipids,AUC,0.9,NR,Held-out same-cohort test n=70,Internal test,Internal only,"Results, PDF pp.4-8",Not external.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 16 lipids,Accuracy,0.771,NR,Held-out same-cohort test n=70,Internal test,Internal only,"Results, PDF pp.4-8",Not external.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 16 lipids,Sensitivity,0.75,NR,Held-out same-cohort test n=70,Internal test,Internal only,"Results, PDF pp.4-8",Not external.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 16 lipids,Specificity,1,NR,Held-out same-cohort test n=70,Internal test,Internal only,"Results, PDF pp.4-8",Not external.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 7 lipids,AUC,0.95,NR,Training/tuning cohort,Internal CV,Internal only,"Results, PDF pp.4-8",High-confidence subpanel.
+S027,ccRCC vs healthy controls,Coupled LASSO-SVM; 7 lipids,AUC,0.82,NR,Held-out same-cohort test n=70,Internal test,Internal only,"Results, PDF pp.4-8",High-confidence subpanel.
+S027,ccRCC stage classification,SVM; 26 features,Accuracy,0.845,NR,Training/tuning stage cohort,Internal CV,Internal only,"Results, PDF pp.7-8",Stage task.
+S027,ccRCC stage classification,SVM; 26 features,Accuracy,0.821,NR,Held-out stage-I test n=28,Internal test,Internal only,"Results, PDF pp.7-8",Selective stage-I test composition.
+S028,CRC vs normal tissue,SVM,Accuracy,1,NR,TCGA-CRC n=695,Apparent/development,No validation,"Results/Table, PDF pp.5-6",No clear independent SVM test.
+S028,CRC vs normal tissue,SVM,Accuracy,0.934,NR,GSE50760 n=54,Apparent/development,No validation,"Results/Table, PDF pp.5-6",No clear independent SVM test.
+S029,Breast cancer vs healthy controls,SVM; four urinary metabolites,AUC,0.79,NR,Urine cohort n=100,Repeated internal test,Internal only,"Results/Figure 4, PDF pp.4-5",Repeated 80:20 splits.
+S029,Breast cancer vs healthy controls,SVM; four urinary metabolites,Accuracy,0.7,Approximate from figure,Urine cohort n=100,Repeated internal test,Internal only,"Figure 4, PDF p.5",Approximate visual extraction.
+S029,Breast cancer vs healthy controls,SVM; four urinary metabolites,Sensitivity,0.8,Approximate from figure,Urine cohort n=100,Repeated internal test,Internal only,"Figure 4, PDF p.5",Approximate visual extraction.
+S029,Breast cancer vs healthy controls,SVM; four urinary metabolites,Specificity,0.6,Approximate from figure,Urine cohort n=100,Repeated internal test,Internal only,"Figure 4, PDF p.5",Approximate visual extraction.
+S030,NSCLC vs healthy controls,SVM; 208 shared proteins,Accuracy,0.9375,NR,Serum cohort n=16,Internal 10-fold CV,Internal only,"Results, PDF pp.2-4",15 of 16 correctly classified.
+S030,NSCLC vs healthy controls,SVM; 208 shared proteins,Sensitivity,0.875,NR,Serum cohort n=16,Internal 10-fold CV,Internal only,"Results, PDF pp.2-4",7 of 8 cancers correctly classified.
+S030,NSCLC vs healthy controls,SVM; 208 shared proteins,Specificity,1,NR,Serum cohort n=16,Internal 10-fold CV,Internal only,"Results, PDF pp.2-4",8 of 8 controls correctly classified.
+S031,Gastric cancer detection,SVM with DTWARP complete-linkage cluster features and InfoGain,AUC,0.716,0.708-0.724,139-subject breath cohort,Repeated internal resampling,Internal only,Table 3; Results PDF pp.11-12,Best coherent SVM feature set; Naive Bayes was better overall.
+S031,Gastric cancer detection,SVM with DTWARP complete-linkage cluster features and InfoGain,Accuracy,0.7487,0.7416-0.7559,139-subject breath cohort,Repeated internal resampling,Internal only,Table 3; Results PDF pp.11-12,Best coherent SVM feature set; Naive Bayes was better overall.
+S031,Gastric cancer detection,SVM with DTWARP complete-linkage cluster features and InfoGain,Sensitivity,0.6073,0.5931-0.6215,139-subject breath cohort,Repeated internal resampling,Internal only,Table 3; Results PDF pp.11-12,Best coherent SVM feature set; Naive Bayes was better overall.
+S031,Gastric cancer detection,SVM with DTWARP complete-linkage cluster features and InfoGain,Specificity,0.8248,0.8166-0.8330,139-subject breath cohort,Repeated internal resampling,Internal only,Table 3; Results PDF pp.11-12,Best coherent SVM feature set; Naive Bayes was better overall.
+S032,Bladder cancer detection,Three-exosomal-lncRNA RBF SVM,AUC,0.875,0.799-0.942,Combined 98-subject cohort,Internal LOOCV,Internal only,Figure 7; Results PDF pp.6-8,Second cohort was not a locked external SVM validation set.
+S032,Bladder cancer detection,Three-exosomal-lncRNA RBF SVM,Accuracy,0.816,,Combined 98-subject cohort,Internal LOOCV,Internal only,Figure 7; Results PDF pp.6-8,Second cohort was not a locked external SVM validation set.
+S032,Bladder cancer detection,Three-exosomal-lncRNA RBF SVM,Sensitivity,0.8,,Combined 98-subject cohort,Internal LOOCV,Internal only,Figure 7; Results PDF pp.6-8,Second cohort was not a locked external SVM validation set.
+S032,Bladder cancer detection,Three-exosomal-lncRNA RBF SVM,Specificity,0.814,,Combined 98-subject cohort,Internal LOOCV,Internal only,Figure 7; Results PDF pp.6-8,Second cohort was not a locked external SVM validation set.
+S034,Thyroid neoplasm versus healthy,Binary SVM,AUC,0.998,,Representative 60/40 split,Internal held-out validation,Internal only,Figure 2,Near-perfect result; global feature selection concern.
+S034,Thyroid neoplasm versus healthy,Binary SVM,Accuracy,0.97,,Representative 60/40 split,Internal held-out validation,Internal only,Figure 2,
+S034,Thyroid neoplasm versus healthy,Binary SVM,Accuracy,0.965,,1000 repeated 60/40 splits,Repeated internal resampling,Internal only,Results,Mean repeated-split accuracy.
+S034,Four-class thyroid classification,One-vs-one multiclass SVM,Accuracy,0.805,,Representative 60/40 split,Internal held-out validation,Internal only,Figure 4,
+S034,Four-class thyroid classification,One-vs-one multiclass SVM,Accuracy,0.639,,1000 repeated 60/40 splits,Repeated internal resampling,Internal only,Results,Mean repeated-split multiclass accuracy.
+S035,Early-stage HCC detection,AdaBoost-RBF-SVM,AUC,0.992,,47-subject diagnostic cohort,Apparent all-cohort evaluation,Internal only,Figure 3; Results,"Reported after development split, but final evaluation included all diagnostic subjects."
+S035,Early-stage HCC detection,AdaBoost-RBF-SVM,Accuracy,0.915,,47-subject diagnostic cohort,Apparent all-cohort evaluation,Internal only,Figure 3; Results,"Reported after development split, but final evaluation included all diagnostic subjects."
+S035,Early-stage HCC detection,AdaBoost-RBF-SVM,Sensitivity,0.929,,47-subject diagnostic cohort,Apparent all-cohort evaluation,Internal only,Figure 3; Results,"Reported after development split, but final evaluation included all diagnostic subjects."
+S035,Early-stage HCC detection,AdaBoost-RBF-SVM,Specificity,0.895,,47-subject diagnostic cohort,Apparent all-cohort evaluation,Internal only,Figure 3; Results,"Reported after development split, but final evaluation included all diagnostic subjects."
+S036,Colon cancer versus normal,RBF SVM,Accuracy,0.9846,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Colon cancer versus normal,RBF SVM,Precision,0.945,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Colon cancer versus normal,RBF SVM,Sensitivity,0.9692,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Colon cancer versus normal,RBF SVM,F1,0.9529,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Colon cancer versus normal,RBF SVM,Specificity,0.9894,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Colon cancer versus normal,RBF SVM,AUC,0.9967,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II versus III-IV,RBF SVM,Accuracy,0.6388,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II versus III-IV,RBF SVM,Precision,0.5524,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II versus III-IV,RBF SVM,Sensitivity,0.584,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II versus III-IV,RBF SVM,F1,0.5356,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II versus III-IV,RBF SVM,Specificity,0.501,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II versus III-IV,RBF SVM,AUC,0.626,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I versus II-III-IV,RBF SVM,Accuracy,0.6595,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I versus II-III-IV,RBF SVM,Precision,0.6492,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I versus II-III-IV,RBF SVM,Sensitivity,0.6353,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I versus II-III-IV,RBF SVM,F1,0.6302,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I versus II-III-IV,RBF SVM,Specificity,0.7872,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I versus II-III-IV,RBF SVM,AUC,0.6541,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II-III versus IV,RBF SVM,Accuracy,0.7111,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II-III versus IV,RBF SVM,Precision,0.4812,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II-III versus IV,RBF SVM,Sensitivity,0.4688,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II-III versus IV,RBF SVM,F1,0.4698,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II-III versus IV,RBF SVM,Specificity,0.7975,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S036,Stage I-II-III versus IV,RBF SVM,AUC,0.4937,,TCGA-COAD task dataset,Repeated internal train-test evaluation,Internal only,Tables 3-4,Random Forest performed better for the main diagnostic task.
+S039,HCC versus cirrhosis,"PCA-SVM using freeze-dried serum, all spectra",Accuracy,0.9155,,71-patient cohort,Patient-level LOOCV,Internal only,Table 3,AUC not reported.
+S039,HCC versus cirrhosis,"PCA-SVM using freeze-dried serum, all spectra",Sensitivity,0.9459,,71-patient cohort,Patient-level LOOCV,Internal only,Table 3,AUC not reported.
+S039,HCC versus cirrhosis,"PCA-SVM using freeze-dried serum, all spectra",Specificity,0.8824,,71-patient cohort,Patient-level LOOCV,Internal only,Table 3,AUC not reported.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,AUC,0.977,0.974-0.979,Training n=8491,Training cohort,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Specificity,0.922,,Training n=8491,Training cohort,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Sensitivity,0.938,,Training n=8491,Training cohort,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Accuracy,0.932,,Training n=8491,Training cohort,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,AUC,0.934,0.927-0.941,Test n=8411,Internal held-out test,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Specificity,0.896,,Test n=8411,Internal held-out test,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Sensitivity,0.828,,Test n=8411,Internal held-out test,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Accuracy,0.87,,Test n=8411,Internal held-out test,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,AUC,0.965,0.963-0.968,All n=16902,Combined apparent cohort,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Specificity,0.925,,All n=16902,Combined apparent cohort,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Sensitivity,0.894,,All n=16902,Combined apparent cohort,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,Pan-cancer detection,Fourteen-miRNA SVM,Accuracy,0.913,,All n=16902,Combined apparent cohort,Internal only,Figures 2-3; Results,Random sample split across pooled GEO datasets.
+S040,HCC versus hepatitis/cirrhosis,Fourteen-miRNA SVM,AUC,0.996,,HCC subgroup,Internal subgroup,Internal only,Results,No independent cohort.
+S040,HCC versus hepatitis/cirrhosis,Fourteen-miRNA SVM,Specificity,0.942,,HCC subgroup,Internal subgroup,Internal only,Results,No independent cohort.
+S040,HCC versus hepatitis/cirrhosis,Fourteen-miRNA SVM,Sensitivity,0.998,,HCC subgroup,Internal subgroup,Internal only,Results,No independent cohort.
+S040,HCC versus hepatitis/cirrhosis,Fourteen-miRNA SVM,Accuracy,0.986,,HCC subgroup,Internal subgroup,Internal only,Results,No independent cohort.
+S040,Early-stage Bladder cancer detection,Fourteen-miRNA SVM,AUC,0.966,,Early-stage subgroup,Internal subgroup,Internal only,Results,Subgroup AUC only.
+S040,Early-stage Colorectal cancer detection,Fourteen-miRNA SVM,AUC,0.91,,Early-stage subgroup,Internal subgroup,Internal only,Results,Subgroup AUC only.
+S040,Early-stage Esophageal cancer detection,Fourteen-miRNA SVM,AUC,0.977,,Early-stage subgroup,Internal subgroup,Internal only,Results,Subgroup AUC only.
+S040,Early-stage Gastric cancer detection,Fourteen-miRNA SVM,AUC,0.983,,Early-stage subgroup,Internal subgroup,Internal only,Results,Subgroup AUC only.
+S040,Early-stage Ovarian cancer detection,Fourteen-miRNA SVM,AUC,0.963,,Early-stage subgroup,Internal subgroup,Internal only,Results,Subgroup AUC only.
+S040,Early-stage Prostate cancer detection,Fourteen-miRNA SVM,AUC,0.937,,Early-stage subgroup,Internal subgroup,Internal only,Results,Subgroup AUC only.
+S041,Cirrhosis detection versus other groups,SVM-HC,AUC,0.988,0.934-0.998,Discovery cohort n=118,Discovery internal,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,Cirrhosis detection versus other groups,SVM-HC,Accuracy,0.907,,Discovery cohort n=118,Discovery internal,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,Cirrhosis detection versus other groups,SVM-HC,Sensitivity,1,,Discovery cohort n=118,Discovery internal,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,Cirrhosis detection versus other groups,SVM-HC,Specificity,0.859,,Discovery cohort n=118,Discovery internal,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,Cirrhosis detection versus other groups,SVM-HC,AUC,0.784,0.668-0.900,Validation cohort n=85,Same-setting validation,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,Cirrhosis detection versus other groups,SVM-HC,Accuracy,0.741,,Validation cohort n=85,Same-setting validation,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,Cirrhosis detection versus other groups,SVM-HC,Sensitivity,0.75,,Validation cohort n=85,Same-setting validation,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,Cirrhosis detection versus other groups,SVM-HC,Specificity,0.737,,Validation cohort n=85,Same-setting validation,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,HCC detection versus other groups,SVM-HCC,AUC,0.907,0.847-0.967,Discovery cohort n=118,Discovery internal,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,HCC detection versus other groups,SVM-HCC,Accuracy,0.89,,Discovery cohort n=118,Discovery internal,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,HCC detection versus other groups,SVM-HCC,Sensitivity,0.86,,Discovery cohort n=118,Discovery internal,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,HCC detection versus other groups,SVM-HCC,Specificity,0.907,,Discovery cohort n=118,Discovery internal,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,HCC detection versus other groups,SVM-HCC,AUC,0.857,0.769-0.944,Validation cohort n=85,Same-setting validation,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,HCC detection versus other groups,SVM-HCC,Accuracy,0.812,,Validation cohort n=85,Same-setting validation,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,HCC detection versus other groups,SVM-HCC,Sensitivity,0.846,,Validation cohort n=85,Same-setting validation,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S041,HCC detection versus other groups,SVM-HCC,Specificity,0.797,,Validation cohort n=85,Same-setting validation,Internal only,Table 3; Figure 4,Random Forest performed better in validation.
+S043,Colorectal cancer versus normal,Four-gene SVM,Accuracy,0.9685,,Training cohort n=482,Training 10-fold CV,Internal only,Results,
+S043,Colorectal cancer versus normal,Four-gene SVM,AUC,0.9956,,Held-out same-TCGA test n=207,Internal held-out test,Internal only,Figure 3,Feature selection appears to have used the full cohort.
+S045,HCC versus HBV cirrhosis,SMO/SVM,AUC,0.751,,Held-out same-center test n=74,Internal held-out test,Internal,Results; Figure 2,MLP performed better.
+S045,HCC versus HBV cirrhosis,SMO/SVM,Accuracy,0.757,,Held-out same-center test n=74,Internal held-out test,Internal,Results; Figure 2,MLP performed better.
+S045,HCC versus HBV cirrhosis,SMO/SVM,Sensitivity,0.825,,Held-out same-center test n=74,Internal held-out test,Internal,Results; Figure 2,MLP performed better.
+S045,HCC versus HBV cirrhosis,SMO/SVM,Specificity,0.676,,Held-out same-center test n=74,Internal held-out test,Internal,Results; Figure 2,MLP performed better.
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,Accuracy,0.958,,Training n=165,Training,Internal,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,Sensitivity,0.97,,Training n=165,Training,Internal,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,Specificity,0.938,,Training n=165,Training,Internal,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,PPV,0.96,,Training n=165,Training,Internal,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,NPV,0.953,,Training n=165,Training,Internal,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,Accuracy,0.917,,Independent same-center validation n=204,External validation,External,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,Sensitivity,0.927,,Independent same-center validation n=204,External validation,External,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,Specificity,0.901,,Independent same-center validation n=204,External validation,External,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,PPV,0.934,,Independent same-center validation n=204,External validation,External,Results; Figure 4,"Same institution, separate sample set."
+S046,Malignant versus benign thyroid nodules,Four-gene SVM,NPV,0.89,,Independent same-center validation n=204,External validation,External,Results; Figure 4,"Same institution, separate sample set."
+S048,Bladder cancer versus healthy,Nonlinear Gaussian SVM,Accuracy,0.9252,,Repeated training cross-validation,Internal cross-validation,Internal,Results,Mean repeated-CV result.
+S048,Bladder cancer versus healthy,Nonlinear Gaussian SVM,Sensitivity,0.8608,,Repeated training cross-validation,Internal cross-validation,Internal,Results,Mean repeated-CV result.
+S048,Bladder cancer versus healthy,Nonlinear Gaussian SVM,Specificity,0.8492,,Repeated training cross-validation,Internal cross-validation,Internal,Results,Mean repeated-CV result.
+S048,Bladder cancer versus healthy,Nonlinear Gaussian SVM,Accuracy,0.9667,,Held-out test n=30,Internal held-out test,Internal,Table 4,Only six controls in test set.
+S048,Bladder cancer versus healthy,Nonlinear Gaussian SVM,Sensitivity,1,,Held-out test n=30,Internal held-out test,Internal,Table 4,Only six controls in test set.
+S048,Bladder cancer versus healthy,Nonlinear Gaussian SVM,Specificity,0.8333,,Held-out test n=30,Internal held-out test,Internal,Table 4,Only six controls in test set.
+S048,Postoperative recurrence versus healthy,Nonlinear Gaussian SVM,AUC,0.99,,Secondary recurrence analysis,Internal secondary task,Internal,Figure 6,Separate secondary task.
+S048,Postoperative recurrence versus healthy,Nonlinear Gaussian SVM,Accuracy,0.8889,,Secondary recurrence analysis,Internal secondary task,Internal,Figure 6,Separate secondary task.
+S048,Postoperative recurrence versus healthy,Nonlinear Gaussian SVM,Sensitivity,0.9167,,Secondary recurrence analysis,Internal secondary task,Internal,Figure 6,Separate secondary task.
+S048,Postoperative recurrence versus healthy,Nonlinear Gaussian SVM,Specificity,0.8333,,Secondary recurrence analysis,Internal secondary task,Internal,Figure 6,Separate secondary task.
+S050,Ovarian cancer benchmark,SVM,Sensitivity,0.9589,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Ovarian cancer benchmark,SVM,Specificity,0.9526,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Ovarian cancer benchmark,SVM,Accuracy,0.956,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Ovarian cancer benchmark,ReliefF-SVM,Sensitivity,0.9781,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Ovarian cancer benchmark,ReliefF-SVM,Specificity,0.9716,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Ovarian cancer benchmark,ReliefF-SVM,Accuracy,0.9747,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Leukemia benchmark,SVM,Sensitivity,0.9481,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Leukemia benchmark,SVM,Specificity,0.9392,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Leukemia benchmark,SVM,Accuracy,0.9437,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Leukemia benchmark,ReliefF-SVM,Sensitivity,0.983,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Leukemia benchmark,ReliefF-SVM,Specificity,0.9779,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,Leukemia benchmark,ReliefF-SVM,Accuracy,0.9806,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,CNS tumor benchmark,SVM,Sensitivity,0.6162,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,CNS tumor benchmark,SVM,Specificity,0.636,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,CNS tumor benchmark,SVM,Accuracy,0.6251,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,CNS tumor benchmark,ReliefF-SVM,Sensitivity,0.7995,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,CNS tumor benchmark,ReliefF-SVM,Specificity,0.8147,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S050,CNS tumor benchmark,ReliefF-SVM,Accuracy,0.8072,,"Mean across 60/40, 70/30 and 80/20 splits",Internal random splits,Internal,Tables 8-10,CNN-based pipeline performed better.
+S052,Colorectal cancer versus normal tissue,SEPT9/AKR1B1 SVM,AUC,0.98,,All 88 samples,Apparent full-cohort,Internal,Table 4; Figure 2,Not an independent validation result.
+S052,Colorectal cancer versus normal tissue,SEPT9/AKR1B1 SVM,Sensitivity,0.95,,All 88 samples,Apparent full-cohort,Internal,Table 4; Figure 2,Not an independent validation result.
+S052,Colorectal cancer versus normal tissue,SEPT9/AKR1B1 SVM,Specificity,0.9,,All 88 samples,Apparent full-cohort,Internal,Table 4; Figure 2,Not an independent validation result.
+S052,Colorectal cancer versus normal tissue,SEPT9/AKR1B1 SVM,Accuracy,0.926,,All 88 samples,Apparent full-cohort,Internal,Table 4; Figure 2,Not an independent validation result.
+S052,Colorectal cancer versus normal tissue,SEPT9/AKR1B1 SVM,Sensitivity,0.98,,Held-out 20% test,Internal held-out test,Internal,Table 5,AUC was not clearly reported for the held-out test.
+S052,Colorectal cancer versus normal tissue,SEPT9/AKR1B1 SVM,Specificity,0.99,,Held-out 20% test,Internal held-out test,Internal,Table 5,AUC was not clearly reported for the held-out test.
+S052,Colorectal cancer versus normal tissue,SEPT9/AKR1B1 SVM,Accuracy,0.98,,Held-out 20% test,Internal held-out test,Internal,Table 5,AUC was not clearly reported for the held-out test.
+S053,Gastric cancer versus healthy,SVM,Accuracy,1,,Internal test split,Internal held-out test,Internal,Tables 3-4,Multiple spectra per participant; split unit unclear.
+S053,Colorectal cancer versus healthy,SVM,Accuracy,1,,Internal test split,Internal held-out test,Internal,Tables 3-4,Multiple spectra per participant; split unit unclear.
+S053,Gastric differentiation classification,SVM,Accuracy,0.8098,,Internal test split,Internal held-out test,Internal,Tables 3-4,Multiple spectra per participant; split unit unclear.
+S053,Gastric stage classification,SVM,Accuracy,0.7967,,Internal test split,Internal held-out test,Internal,Tables 3-4,Multiple spectra per participant; split unit unclear.
+S053,Colorectal stage classification,SVM,Accuracy,0.8448,,Internal test split,Internal held-out test,Internal,Tables 3-4,Multiple spectra per participant; split unit unclear.
+S054,Lung adenocarcinoma versus adjacent normal,15-gene LCHN SVM,Accuracy,0.8966,,GSE32867 discovery n=58,Training,Internal,Table 3,External datasets used different platforms/patients.
+S054,Lung adenocarcinoma versus adjacent normal,15-gene LCHN SVM,Accuracy,0.9848,,GSE10072 n=33,External validation,External,Table 3,External datasets used different platforms/patients.
+S054,Lung adenocarcinoma versus adjacent normal,15-gene LCHN SVM,Accuracy,0.9167,,GSE19804 n=60,External validation,External,Table 3,External datasets used different platforms/patients.
+S054,Lung adenocarcinoma versus adjacent normal,15-gene LCHN SVM,Accuracy,0.9762,,GSE21933 n=21,External validation,External,Table 3,External datasets used different platforms/patients.
+S054,Lung adenocarcinoma versus adjacent normal,15-gene LCHN SVM,Accuracy,0.98,,GSE27262 n=25,External validation,External,Table 3,External datasets used different platforms/patients.
+S054,Lung adenocarcinoma versus adjacent normal,15-gene LCHN SVM,Accuracy,0.9675,,GSE40419 n=77,External validation,External,Table 3,External datasets used different platforms/patients.
+S054,Lung adenocarcinoma versus adjacent normal,15-gene LCHN SVM,Accuracy,0.9167,,GSE37764 n=6,External validation,External,Table 3,External datasets used different platforms/patients.
+S055,Acute leukemia versus healthy,26-peak Gaussian SVM,AUC,0.998,0.994-1.002,Held-out validation n=102,Internal held-out test,Internal,Results; Figure 2,"Random cohort split, not site-held-out external validation."
+S055,Acute leukemia versus healthy,26-peak Gaussian SVM,Sensitivity,0.97,,Held-out validation n=102,Internal held-out test,Internal,Results; Figure 2,"Random cohort split, not site-held-out external validation."
+S055,Acute leukemia versus healthy,26-peak Gaussian SVM,Specificity,1,,Held-out validation n=102,Internal held-out test,Internal,Results; Figure 2,"Random cohort split, not site-held-out external validation."
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,AUC,0.99,,TCGA training n=470,Internal cross-validation,Internal,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,F1,0.99,,TCGA training n=470,Internal cross-validation,Internal,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,Precision,1,,TCGA training n=470,Internal cross-validation,Internal,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,Specificity,1,,TCGA training n=470,Internal cross-validation,Internal,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,Sensitivity,0.98,,TCGA training n=470,Internal cross-validation,Internal,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,Accuracy,0.99,,TCGA training n=470,Internal cross-validation,Internal,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,AUC,0.97,,GSE30601 n=297,External validation,External,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,F1,0.93,,GSE30601 n=297,External validation,External,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,Precision,0.94,,GSE30601 n=297,External validation,External,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,Specificity,0.86,,GSE30601 n=297,External validation,External,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,Sensitivity,0.93,,GSE30601 n=297,External validation,External,Table 2,External dataset was itself evaluated with 10-fold CV.
+S056,Stomach adenocarcinoma versus non-tumor,Eight-probe RBF SVM,Accuracy,0.91,,GSE30601 n=297,External validation,External,Table 2,External dataset was itself evaluated with 10-fold CV.
+S057,PDAC marker screening,Weighted SVM,AUC,0.956,,Discovery cohort; miR-148a marker,LOOCV,Internal,Table 2,Representative marker-level result; not a single final model.
+S057,PDAC marker screening,Weighted SVM,Balanced accuracy,0.927,,Discovery cohort; miR-148a marker,LOOCV,Internal,Table 2,Representative marker-level result.
+S057,PDAC marker screening,Weighted SVM,Balanced accuracy,0.897,,GSE32688; miR-148a marker,Independent dataset SVM-LOOCV,External,Table 2,Independent data also contributed to marker filtering.
+S058,Prostate cancer versus non-tumor,RBF SVM,AUC,0.9,SD 0.01,GSE6099 repeated test splits,Internal held-out test,Internal,Results/Table,Mean over 100 random splits.
+S058,Prostate cancer versus non-tumor,RBF SVM,Accuracy,0.8907,SD 0.0522,GSE6099 repeated test splits,Internal held-out test,Internal,Results/Table,Mean over 100 random splits.
+S058,Prostate cancer versus non-tumor,RBF SVM,AUC,0.89,SD 0.01,GSE6956 repeated test splits,Internal held-out test,Internal,Results/Table,Mean over 100 random splits.
+S058,Prostate cancer versus non-tumor,RBF SVM,Accuracy,0.8588,SD 0.0579,GSE6956 repeated test splits,Internal held-out test,Internal,Results/Table,Mean over 100 random splits.
+S058,Prostate cancer versus non-tumor,RBF SVM,AUC,0.93,SD 0.03,GSE21034 repeated test splits,Internal held-out test,Internal,Results/Table,Mean over 100 random splits.
+S058,Prostate cancer versus non-tumor,RBF SVM,Accuracy,0.9271,SD 0.0682,GSE21034 repeated test splits,Internal held-out test,Internal,Results/Table,Mean over 100 random splits.
+S059,GBM versus healthy,RBF SVM,Sensitivity,0.875,,Whole-serum ATR-FTIR; 24-patient blind test,Internal held-out test,Internal,Results,Patient-level result.
+S059,GBM versus healthy,RBF SVM,Specificity,1,,Whole-serum ATR-FTIR; 24-patient blind test,Internal held-out test,Internal,Results,Patient-level result.
+S059,GBM versus healthy,RBF SVM,Sensitivity,0.882,,Whole-serum ATR-FTIR blind spectra,Internal held-out test,Internal,Results,Spectrum-level result.
+S059,GBM versus healthy,RBF SVM,Specificity,0.944,,Whole-serum ATR-FTIR blind spectra,Internal held-out test,Internal,Results,Spectrum-level result.
+S059,GBM versus healthy,RBF SVM,Sensitivity,0.789,,10-kDa serum fraction; patient-level test,Internal held-out test,Internal,Results,Patient-level result.
+S059,GBM versus healthy,RBF SVM,Specificity,0.889,,10-kDa serum fraction; patient-level test,Internal held-out test,Internal,Results,Patient-level result.
+S061,Early lung-cancer screening,Bincount SVM,AUC,0.759,0.705-0.810,Validation cohort,External validation,External,Results/Figure 3,SVM-specific component.
+S061,Early lung-cancer screening,End-motif SVM,AUC,0.815,0.770-0.859,Validation cohort,External validation,External,Results/Figure 3,SVM-specific component.
+S061,Early lung-cancer screening,Protein-biomarker SVM,AUC,0.7,0.642-0.756,Validation cohort,External validation,External,Results/Figure 3,SVM-specific component.
+S062,AFP-negative HCC versus non-HCC,SVM,AUC,0.61,0.527-0.684,Training cohort 5-fold CV,Cross-validation,Internal,Figure 3/Table,Logistic regression AUC 0.842 was better.
+S062,AFP-negative HCC versus non-HCC,SVM,Sensitivity,0.9608,0.8969-0.9874,Training cohort 5-fold CV,Cross-validation,Internal,Table,Very low specificity.
+S062,AFP-negative HCC versus non-HCC,SVM,Specificity,0.2889,0.2006-0.3955,Training cohort 5-fold CV,Cross-validation,Internal,Table,Very low specificity.
+S063,NSCLC/asthma/healthy three-class task,RBF SVM,Accuracy,0.94,SE 0.012,Held-out test n=389,Internal held-out test,Internal,Table III,Three-class accuracy.
+S063,NSCLC versus healthy,RBF SVM,Sensitivity,0.99,SE 0.004,Held-out test; all markers plus sex,Internal held-out test,Internal,Results/Table IV,Potential demographic confounding.
+S063,NSCLC versus healthy,RBF SVM,Specificity,0.95,SE 0.013,Held-out test; all markers plus sex,Internal held-out test,Internal,Results/Table IV,Potential demographic confounding.
+S063,NSCLC versus healthy; males,RBF SVM,Sensitivity,1,,Male test subgroup; all markers,Internal subgroup test,Internal,Table IV,Perfect subgroup result.
+S063,NSCLC versus healthy; males,RBF SVM,Specificity,0.94,SE 0.018,Male test subgroup; all markers,Internal subgroup test,Internal,Table IV,Perfect sensitivity.
+S063,NSCLC versus healthy; females,RBF SVM,Sensitivity,1,,Female test subgroup; all markers,Internal subgroup test,Internal,Table IV,Perfect subgroup result.
+S063,NSCLC versus healthy; females,RBF SVM,Specificity,0.97,,Female test subgroup; all markers,Internal subgroup test,Internal,Table IV,Perfect sensitivity.
+S064,Advanced neoplasm versus healthy,Radial SVM,AUC,0.79,0.723-0.841,Repeated 5-fold cross-validation,Cross-validation,Internal,Results,Primary less-biased estimate.
+S064,Advanced neoplasm versus healthy,Radial SVM,AUC,0.92,0.871-0.962,Full model dataset,Apparent/full-data,Internal,Figure 2/Table 2,Apparent estimate; do not use as primary.
+S064,Advanced neoplasm versus healthy,Radial SVM,Sensitivity,0.85,,Full model dataset,Apparent/full-data,Internal,Table 2,Apparent estimate.
+S064,Advanced neoplasm versus healthy,Radial SVM,Specificity,0.9,,Full model dataset,Apparent/full-data,Internal,Table 2,Apparent estimate.
+S064,CRC versus healthy,Radial SVM,AUC,0.95,0.903-0.991,Full model dataset,Apparent/full-data,Internal,Results/Table 2,Apparent estimate.
+S064,Advanced adenoma versus healthy,Radial SVM,AUC,0.91,0.868-0.959,Full model dataset,Apparent/full-data,Internal,Results/Table 2,Apparent estimate.
+S064,Advanced neoplasm versus healthy,Radial SVM,Brier score,0.116,,Full model dataset,Apparent/full-data,Internal,Figure 3,Calibration-related metric.
+S065,Breast cancer versus controls,SVM BCExoC,AUC,0.83,0.77-0.88,Training cohort n=182,LOOCV,Internal,Results/Figure 4,SVM had largest AUC among compared models.
+S065,Breast cancer versus controls,SVM BCExoC,Accuracy,0.83,,Training cohort n=182,LOOCV,Internal,Results/Figure 4,Training cross-validated result.
+S065,Breast cancer versus controls,SVM BCExoC,AUC,0.8,0.71-0.89,Separate validation cohort n=77,Same-center validation,External,Results/Figure 4,Independent samples from same institution.
+S065,Breast cancer versus controls,SVM BCExoC,AUC,0.82,0.77-0.87,All participants n=259,Pooled apparent,Internal,Results/Figure 4,Pooled estimate.
+S067,Breast cancer versus healthy,SVM with OSAF/SBS,Sensitivity,0.835,,All 170 samples,10-fold cross-validation,Internal,Table 3,Feature selection performed on same cohort.
+S067,Breast cancer versus healthy,SVM with OSAF/SBS,Specificity,0.906,,All 170 samples,10-fold cross-validation,Internal,Table 3,Feature selection performed on same cohort.
+S067,Breast cancer versus healthy,SVM with OSAF/SBS,MCC,0.743,,All 170 samples,10-fold cross-validation,Internal,Table 3,No external validation.
+S067,Breast cancer versus healthy,SVM with OSAF/SBS,Sensitivity,0.835,,All 170 samples,LOOCV,Internal,Table 3,Nearly unbiased only conditional on feature-selection process.
+S067,Breast cancer versus healthy,SVM with OSAF/SBS,Specificity,0.859,,All 170 samples,LOOCV,Internal,Table 3,No external validation.
+S067,Breast cancer versus healthy,SVM with OSAF/SBS,MCC,0.694,,All 170 samples,LOOCV,Internal,Table 3,No external validation.
+S068,Oral SCC versus normal mucosa,RBF SVM,Sensitivity,0.95,,Blind calibration spectra,Internal held-out test,Internal,Table 4,Spectrum-level result.
+S068,Oral SCC versus normal mucosa,RBF SVM,Specificity,0.95,,Blind calibration spectra,Internal held-out test,Internal,Table 4,Spectrum-level result.
+S068,Oral SCC versus normal mucosa,RBF SVM,Accuracy,0.9524,,Blind calibration spectra,Internal held-out test,Internal,Table 4,19/20 SCC and 21/22 normal correct.
+S068,Oral SCC versus leukoplakia,RBF SVM,Sensitivity,0.9048,,Blind calibration spectra,Internal held-out test,Internal,Table 4,Spectrum-level result.
+S068,Oral SCC versus leukoplakia,RBF SVM,Specificity,0.95,,Blind calibration spectra,Internal held-out test,Internal,Table 4,Spectrum-level result.
+S068,Oral SCC versus leukoplakia,RBF SVM,Accuracy,0.9318,,Blind calibration spectra,Internal held-out test,Internal,Table 4,19/20 SCC and 22/24 OLK correct.
+S068,Leukoplakia versus normal mucosa,RBF SVM,Sensitivity,0.7143,,Blind calibration spectra,Internal held-out test,Internal,Table 4,Spectrum-level result.
+S068,Leukoplakia versus normal mucosa,RBF SVM,Specificity,0.8333,,Blind calibration spectra,Internal held-out test,Internal,Table 4,Spectrum-level result.
+S068,Leukoplakia versus normal mucosa,RBF SVM,Accuracy,0.7391,,Blind calibration spectra,Internal held-out test,Internal,Table 4,20/24 OLK and 14/22 normal correct.
+S069,HNSCC versus adjacent normal,SVM,AUC,0.983,,TCGA 500 HNSCC + 44 normal,Same-cohort apparent/CV result,Internal,Results/Figure 4,qRT-PCR cohort confirmed expression only.
+S069,HNSCC versus adjacent normal,SVM,Sensitivity,0.962,,TCGA 500 HNSCC + 44 normal,Same-cohort apparent/CV result,Internal,Results/Figure 4,qRT-PCR cohort confirmed expression only.
+S069,HNSCC versus adjacent normal,SVM,Specificity,0.955,,TCGA 500 HNSCC + 44 normal,Same-cohort apparent/CV result,Internal,Results/Figure 4,qRT-PCR cohort confirmed expression only.
+S070,STAD versus adjacent normal,SVM,AUC,0.983,,TCGA 375 STAD + 32 normal,Same-cohort apparent/CV result,Internal,Results/Figure 3,GSE27342 confirmed expression only.
+S070,STAD versus adjacent normal,SVM,Sensitivity,0.971,,TCGA 375 STAD + 32 normal,Same-cohort apparent/CV result,Internal,Results/Figure 3,GSE27342 confirmed expression only.
+S070,STAD versus adjacent normal,SVM,Specificity,0.969,,TCGA 375 STAD + 32 normal,Same-cohort apparent/CV result,Internal,Results/Figure 3,GSE27342 confirmed expression only.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,1,,Set 1,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,1,,Set 1,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,Set 1,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,1,,Set 1,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,1,,Set 2,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,1,,Set 2,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,Set 2,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,1,,Set 2,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.87,,Set 3,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.83,,Set 3,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.9,,Set 3,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.89,,Set 3,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.82,,Set 4,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.93,,Set 4,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.71,,Set 4,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.93,,Set 4,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.86,,Set 5,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.83,,Set 5,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.89,,Set 5,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.97,,Set 5,Training-set LOOCV,Internal,Table 2,Internal LOOCV.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,1,,Set 6,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,1,,Set 6,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,Set 6,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,1,,Set 6,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.92,,Set 7,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.9,,Set 7,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.93,,Set 7,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.94,,Set 7,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,1,,Set 8,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,1,,Set 8,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,Set 8,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,1,,Set 8,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.95,,Set 9,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.91,,Set 9,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,Set 9,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,1,,Set 9,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.96,,Set 10,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.93,,Set 10,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,Set 10,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.94,,Set 10,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.73,,Set 11,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.75,,Set 11,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.71,,Set 11,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.8,,Set 11,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.79,,V1,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.76,,V1,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.83,,V1,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.83,,V1,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.98,,V2,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.97,,V2,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,V2,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,1,,V2,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.94,,V3,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,1,,V3,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.89,,V3,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.98,,V3,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.95,,V4,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,1,,V4,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.91,,V4,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.99,,V4,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.83,,V5,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.84,,V5,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.82,,V5,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.89,,V5,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.82,,PV1,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.94,,PV1,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.72,,PV1,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.93,,PV1,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.74,,PV2,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.74,,PV2,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.75,,PV2,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.82,,PV2,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.83,,PV3,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.78,,PV3,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.89,,PV3,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.95,,PV3,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,1,,PV4-IPMA,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,1,,PV4-IPMA,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,PV4-IPMA,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,1,,PV4-IPMA,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,0.84,,PV4-IPMC,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,0.83,,PV4-IPMC,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,0.86,,PV4-IPMC,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,0.81,,PV4-IPMC,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Accuracy,1,,PV4-IPMN,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Sensitivity,1,,PV4-IPMN,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,Specificity,1,,PV4-IPMN,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S071,PDAC/precursor lesion classification,Polynomial-kernel SVM,AUC,1,,PV4-IPMN,Independent-dataset LOOCV/evaluation,External,Table 2,Classifier appears evaluated/refit within each dataset; not a clearly locked transfer model.
+S075,Cholangiocarcinoma versus non-CCA,Linear SVM; All-7 panel,AUC,0.961,0.885-1.000,Held-out test set n=18,Internal held-out test,Internal,Results/Table/Figure,Best All-7 model.
+S077,Lung cancer versus benign lesion,Gene-based SVM,AUC,0.902,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Gene-based SVM,Sensitivity,0.871,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Gene-based SVM,Specificity,0.756,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Gene-based SVM,PPV,0.859,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Gene-based SVM,NPV,0.775,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Advanced SVM: gene + CT/clinical,AUC,0.903,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Advanced SVM: gene + CT/clinical,Sensitivity,0.9,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Advanced SVM: gene + CT/clinical,Specificity,0.732,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Advanced SVM: gene + CT/clinical,PPV,0.851,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S077,Lung cancer versus benign lesion,Advanced SVM: gene + CT/clinical,NPV,0.811,,Single-center cohort n=283,10-fold cross-validation,Internal,Results/Table 2,No independent external validation.
+S078,CRC versus healthy,Arm-level CNV SVM,AUC,0.8796,,Held-out test n=30,Internal held-out test,Internal,Results/Table 3,Test included 12 CRC and 18 healthy controls.
+S078,CRC versus healthy,Arm-level CNV SVM,Sensitivity,0.917,,Held-out test n=30,Internal held-out test,Internal,Results/Table 3,Test included 12 CRC and 18 healthy controls.
+S078,CRC versus healthy,Arm-level CNV SVM,Specificity,0.889,,Held-out test n=30,Internal held-out test,Internal,Results/Table 3,Test included 12 CRC and 18 healthy controls.
+S078,CRC versus healthy,Arm-level CNV SVM,Accuracy,0.9,,Held-out test n=30,Internal held-out test,Internal,Results/Table 3,Test included 12 CRC and 18 healthy controls.
+S078,Early-stage CRC versus healthy,Arm-level CNV SVM,Sensitivity,1,,Held-out test early-stage subset n=5,Internal held-out test,Internal,Results,Only five early-stage cases.
+S079,Gastric cancer versus healthy,Linear SVM,AUC,0.72,,Differentially expressed genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Sensitivity,0.85,,Differentially expressed genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Specificity,0.68,,Differentially expressed genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,MCC,0.67,,Differentially expressed genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,AUC,0.68,,Disease pathway genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Sensitivity,0.77,,Disease pathway genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Specificity,0.68,,Disease pathway genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,MCC,0.65,,Disease pathway genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,AUC,0.95,,Hub genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Sensitivity,1,,Hub genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Specificity,0.87,,Hub genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,MCC,0.85,,Hub genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,AUC,0.88,,Informative genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Sensitivity,0.92,,Informative genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Specificity,0.98,,Informative genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,MCC,0.88,,Informative genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,AUC,0.99,,Five key genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Sensitivity,0.98,,Five key genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,Specificity,1,,Five key genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S079,Gastric cancer versus healthy,Linear SVM,MCC,0.95,,Five key genes,Internal held-out test,Internal,Results/Table,Feature discovery likely used the full dataset before split.
+S080,Four-class breast cancer stage classification,PSO-SVM; PLS-48,Average accuracy,0.9364,,Oversampling,Repeated internal train-test/CV,Internal,Results/Table,"Selected after extensive resampling, PLS-component and optimizer search."
+S080,Four-class breast cancer stage classification,GA-SVM; PLS-54,Average accuracy,0.9227,,Oversampling,Repeated internal train-test/CV,Internal,Results/Table,"Selected after extensive resampling, PLS-component and optimizer search."
+S080,Four-class breast cancer stage classification,GS-SVM; PLS-42,Average accuracy,0.9545,,Oversampling,Repeated internal train-test/CV,Internal,Results/Table,"Selected after extensive resampling, PLS-component and optimizer search."
+S080,Four-class breast cancer stage classification,PSO-SVM; PLS-49,Average accuracy,0.9744,,Undersampling,Repeated internal train-test/CV,Internal,Results/Table,"Selected after extensive resampling, PLS-component and optimizer search."
+S080,Four-class breast cancer stage classification,GA-SVM; PLS-43,Average accuracy,1,,Undersampling,Repeated internal train-test/CV,Internal,Results/Table,"Selected after extensive resampling, PLS-component and optimizer search."
+S080,Four-class breast cancer stage classification,GS-SVM; PLS-37,Average accuracy,0.9767,,Undersampling,Repeated internal train-test/CV,Internal,Results/Table,"Selected after extensive resampling, PLS-component and optimizer search."
+S083,CRC versus colorectal adenoma,Linear SVM; seven-peak panel,Accuracy,0.867,,Repeated blind test n=30 per repetition,Repeated internal 3-fold CV,Internal,Results/Table 4,"CRC-versus-healthy classifier was ANN, not SVM."
+S083,CRC versus colorectal adenoma,Linear SVM; seven-peak panel,Sensitivity,0.89,0.86-0.92,Repeated blind test n=30 per repetition,Repeated internal 3-fold CV,Internal,Results/Table 4,"CRC-versus-healthy classifier was ANN, not SVM."
+S083,CRC versus colorectal adenoma,Linear SVM; seven-peak panel,Specificity,0.83,0.79-0.87,Repeated blind test n=30 per repetition,Repeated internal 3-fold CV,Internal,Results/Table 4,"CRC-versus-healthy classifier was ANN, not SVM."
+S083,CRC versus colorectal adenoma,Linear SVM; seven-peak panel,PPV,0.89,0.86-0.92,Repeated blind test n=30 per repetition,Repeated internal 3-fold CV,Internal,Results/Table 4,"CRC-versus-healthy classifier was ANN, not SVM."
+S084,Ovarian cancer versus healthy,RBF SVM; five-peak panel,Accuracy,0.967,,10-fold CV test predictions,10-fold cross-validation,Internal,Results/Table 2,Small cohort; sequential peak selection and CV were not clearly nested.
+S084,Ovarian cancer versus healthy,RBF SVM; five-peak panel,Sensitivity,0.967,,10-fold CV test predictions,10-fold cross-validation,Internal,Results/Table 2,Small cohort; sequential peak selection and CV were not clearly nested.
+S084,Ovarian cancer versus healthy,RBF SVM; five-peak panel,Specificity,0.967,,10-fold CV test predictions,10-fold cross-validation,Internal,Results/Table 2,Small cohort; sequential peak selection and CV were not clearly nested.
+S084,Ovarian cancer versus healthy,RBF SVM; five-peak panel,PPV,0.967,,10-fold CV test predictions,10-fold cross-validation,Internal,Results/Table 2,Small cohort; sequential peak selection and CV were not clearly nested.
+S085,PDAC vs CP+healthy,SVM d-signature,AUC,0.96,0.931-0.988,Training cohort n=188,Training,Internal,Table 3,
+S085,PDAC vs CP+healthy,SVM d-signature,AUC,0.95,0.910-0.991,Internal validation n=135,Internal validation,Internal,Table 3,
+S085,PDAC vs CP+healthy,SVM d-signature,AUC,0.936,0.889-0.983,External cohort n=178,External validation,External,Table 3,
+S085,PDAC vs CP+healthy,SVM d-signature,Sensitivity,0.9368,0.8676-0.9765,External cohort n=178,External validation,External,Table 3,
+S085,PDAC vs CP+healthy,SVM d-signature,Specificity,0.9157,0.8339-0.9654,External cohort n=178,External validation,External,Table 3,
+S085,PDAC vs CP+healthy,SVM d-signature,Accuracy,0.9269,0.8783-0.9605,External cohort n=178,External validation,External,Table 3,
+S085,Stage I/II PDAC vs CP+healthy,SVM d-signature,AUC,0.906,0.838-0.975,External cohort,External validation,External,Table 3,
+S085,Stage I/II PDAC vs CP+healthy,SVM d-signature,Sensitivity,0.8846,0.7656-0.9565,External cohort,External validation,External,Table 3,
+S085,Stage I/II PDAC vs CP+healthy,SVM d-signature,Specificity,0.9157,0.8339-0.9654,External cohort,External validation,External,Table 3,
+S085,Stage I/II PDAC vs CP+healthy,SVM d-signature,Accuracy,0.9037,0.8410-0.9477,External cohort,External validation,External,Table 3,
+S085,PDAC vs chronic pancreatitis,SVM d-signature,AUC,0.953,0.915-0.991,External cohort,External validation,External,Table 3,
+S085,PDAC vs chronic pancreatitis,SVM d-signature,Sensitivity,0.9368,0.8676-0.9765,External cohort,External validation,External,Table 3,
+S085,PDAC vs chronic pancreatitis,SVM d-signature,Specificity,0.9,0.7634-0.9721,External cohort,External validation,External,Table 3,
+S085,PDAC vs chronic pancreatitis,SVM d-signature,Accuracy,0.9259,0.8680-0.9639,External cohort,External validation,External,Table 3,
+S086,Platelet multiclass dataset 11,EPSVM alpha=0.1,Mean NER,0.8928,,GSE68086 Data11,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 12,EPSVM alpha=0.1,Mean NER,0.8216,,GSE68086 Data12,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 13,EPSVM alpha=0.1,Mean NER,0.8153,,GSE68086 Data13,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 14,EPSVM alpha=0.1,Mean NER,0.8067,,GSE68086 Data14,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 15,EPSVM alpha=0.1,Mean NER,0.8133,,GSE68086 Data15,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 11,EPSVM alpha=0.5,Mean NER,0.8758,,GSE68086 Data11,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 12,EPSVM alpha=0.5,Mean NER,0.8203,,GSE68086 Data12,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 13,EPSVM alpha=0.5,Mean NER,0.8184,,GSE68086 Data13,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 14,EPSVM alpha=0.5,Mean NER,0.7943,,GSE68086 Data14,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 15,EPSVM alpha=0.5,Mean NER,0.8014,,GSE68086 Data15,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 11,EPSVM alpha=0.9,Mean NER,0.9035,,GSE68086 Data11,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 12,EPSVM alpha=0.9,Mean NER,0.8391,,GSE68086 Data12,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 13,EPSVM alpha=0.9,Mean NER,0.8269,,GSE68086 Data13,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 14,EPSVM alpha=0.9,Mean NER,0.803,,GSE68086 Data14,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 15,EPSVM alpha=0.9,Mean NER,0.7904,,GSE68086 Data15,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 11,SVM-RFE+SVM,Mean NER,0.8624,,GSE68086 Data11,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 12,SVM-RFE+SVM,Mean NER,0.7996,,GSE68086 Data12,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 13,SVM-RFE+SVM,Mean NER,0.7947,,GSE68086 Data13,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 14,SVM-RFE+SVM,Mean NER,0.7432,,GSE68086 Data14,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 15,SVM-RFE+SVM,Mean NER,0.7599,,GSE68086 Data15,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 11,ReliefF+SVM,Mean NER,0.8708,,GSE68086 Data11,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 12,ReliefF+SVM,Mean NER,0.7386,,GSE68086 Data12,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 13,ReliefF+SVM,Mean NER,0.798,,GSE68086 Data13,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 14,ReliefF+SVM,Mean NER,0.7346,,GSE68086 Data14,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S086,Platelet multiclass dataset 15,ReliefF+SVM,Mean NER,0.7603,,GSE68086 Data15,Repeated same-dataset test,Internal,Table 6,Higher is better; random two-thirds/one-third splits repeated 30 times
+S091,Malignant vs benign breast disease,Multimodal SVM,AUC,0.9979,,86 training+validation / 5 test,Internal test,Internal,Figure 5(f),Best result selected across many algorithms and splits
+S091,Malignant vs benign breast disease,Multimodal SVM,AUC,0.8571,,61 training+validation / 30 test,Internal test,Internal,Figure 5(f),
+S094,HCC vs chronic hepatitis/cirrhosis,22-gene Lasso-SVM,AUC,0.94,0.908-0.964,qPCR cohort n=316,Cross-validation,Internal,Figure 3,
+S094,HCC vs chronic hepatitis/cirrhosis,22-gene Lasso-SVM,Sensitivity,0.88,,qPCR cohort n=316,Cross-validation,Internal,Figure 3,
+S094,HCC vs chronic hepatitis/cirrhosis,22-gene Lasso-SVM,Specificity,0.883,,qPCR cohort n=316,Cross-validation,Internal,Figure 3,
+S094,AFP-negative HCC vs controls,22-gene Lasso-SVM,AUC,0.93,0.888-0.960,AFP-negative qPCR subgroup,Cross-validation,Internal,Figure 3,
+S094,AFP-negative HCC vs controls,22-gene Lasso-SVM,Sensitivity,0.913,,AFP-negative qPCR subgroup,Cross-validation,Internal,Figure 3,
+S094,AFP-negative HCC vs controls,22-gene Lasso-SVM,Specificity,0.8324,,AFP-negative qPCR subgroup,Cross-validation,Internal,Figure 3,
+S096,Glioma vs normal tissue,Linear PCA-SVM (PC1+PC2+PC6),Sensitivity,1,,241 spectra from 95 samples,Leave-one-spectrum-out CV,Internal,Abstract/section 2.7,AUC reported as approximately 1.0
+S096,Glioma vs normal tissue,Linear PCA-SVM (PC1+PC2+PC6),Specificity,0.963,,241 spectra from 95 samples,Leave-one-spectrum-out CV,Internal,Abstract/section 2.7,AUC reported as approximately 1.0
+S096,Glioma vs normal tissue,Linear PCA-SVM (PC1+PC2+PC6),Accuracy,0.996,,241 spectra from 95 samples,Leave-one-spectrum-out CV,Internal,Abstract/section 2.7,AUC reported as approximately 1.0
+S096,Glioma vs normal tissue,Linear PCA-SVM (PC1+PC2+PC6),AUC,1,Approximate,241 spectra from 95 samples,Leave-one-spectrum-out CV,Internal,Abstract/section 2.7,AUC reported as approximately 1.0
+S096,Glioma vs normal tissue,Linear PCA-SVM (PC1+PC2),Sensitivity,0.963,,241 spectra,Leave-one-spectrum-out CV,Internal,Figure 4/section 2.7,
+S096,Glioma vs normal tissue,Linear PCA-SVM (PC1+PC2),Specificity,0.741,,241 spectra,Leave-one-spectrum-out CV,Internal,Figure 4/section 2.7,
+S096,Glioma vs normal tissue,Linear PCA-SVM (PC1+PC2),Accuracy,0.938,,241 spectra,Leave-one-spectrum-out CV,Internal,Figure 4/section 2.7,
+S096,Glioma vs normal tissue,Linear PCA-SVM (PC1+PC2),AUC,0.968,,241 spectra,Leave-one-spectrum-out CV,Internal,Figure 4/section 2.7,
+S096,Normal vs low-grade vs high-grade glioma,Linear PCA-SVM,Normal-class accuracy,0.963,,241 spectra,Internal classification,Internal,Abstract/section 2.7,No patient-level validation
+S096,Normal vs low-grade vs high-grade glioma,Linear PCA-SVM,Low-grade-class accuracy,0.537,,241 spectra,Internal classification,Internal,Abstract/section 2.7,No patient-level validation
+S096,Normal vs low-grade vs high-grade glioma,Linear PCA-SVM,High-grade-class accuracy,0.841,,241 spectra,Internal classification,Internal,Abstract/section 2.7,No patient-level validation
+S096,Normal vs low-grade vs high-grade glioma,Linear PCA-SVM,Overall accuracy,0.751,,241 spectra,Internal classification,Internal,Abstract/section 2.7,No patient-level validation
+S033,Papillary thyroid cancer diagnosis,SVM,Accuracy,0.92,NR,Testing set,Held-out internal test,Internal only,Abstract/sample classification,SVM had best diagnostic effect among five models.
+S038,Liver cancer/stage classification,PLS-SVM,Accuracy,0.875,NR,Unknown testing set,Held-out internal test,Internal only,Abstract/results,Spectroscopy-derived subgroup.
+S072,Primary myelofibrosis vs healthy,GS-SVM,Accuracy,0.923-1.00,NR,FTIR ranges,Internal validation unclear,Internal only,Abstract,Accuracy varied by FTIR range.
+S073,ESCC screening,SVM,Accuracy,0.851,NR,LOOCV,Internal validation,Internal only,Abstract,SVM model with four protein peaks.
+S073,ESCC screening,SVM,Sensitivity,0.861,NR,LOOCV,Internal validation,Internal only,Abstract,SVM model with four protein peaks.
+S073,ESCC screening,SVM,Specificity,0.842,NR,LOOCV,Internal validation,Internal only,Abstract,SVM model with four protein peaks.
+S073,ESCC screening,SVM,PPV,0.838,NR,LOOCV,Internal validation,Internal only,Abstract,Positive predictive value.
