@@ -19,8 +19,6 @@ The final evidence base includes:
 - 544 article-level SVM performance entries
 - PROBAST risk-of-bias assessments for all included studies
 
-No pooled meta-analysis was performed because of substantial clinical, methodological, and statistical heterogeneity.
-
 ## Repository Structure
 
 ```text
