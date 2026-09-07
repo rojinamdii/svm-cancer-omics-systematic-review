@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite the associated systematic review."
+
+title: "SVM Cancer Omics Systematic Review: Supplementary Data and Supporting Materials"
+
+type: dataset
+
+authors:
+  - family-names: "Mohamadi"
+    given-names: "Zhina"
+
+  - family-names: "Mohammadi"
+    given-names: "Rozhina"
+    orcid: "https://orcid.org/0009-0000-4936-3580"
+
+  - family-names: "Abtahi"
+    given-names: "Erfan"
+
+  - family-names: "Shayegh"
+    given-names: "Zahra Sadat"
+
+  - family-names: "Kachouei"
+    given-names: "Mehrafrin Ataei"
+
+  - family-names: "Fakhar"
+    given-names: "Amin"
+
+  - family-names: "Shirani"
+    given-names: "Mohammad Mahdi"
+
+  - family-names: "Malekian"
+    given-names: "Mohammadhosein"
+
+  - family-names: "Zinatshoar"
+    given-names: "Amir"
+
+  - family-names: "Biglari"
+    given-names: "Mahdi"
+
+  - family-names: "Rezaei"
+    given-names: "Fatemeh"
+
+  - family-names: "Zarinkhat"
+    given-names: "Armin"
+
+url: "https://github.com/rojinamdii/svm-cancer-omics-systematic-review"
+
+keywords:
+  - support vector machine
+  - cancer
+  - omics
+  - machine learning
+  - systematic review
+  - bioinformatics
